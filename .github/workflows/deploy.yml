@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI/CD Pipeline Alvaro
 on:
   push:
     branches: [ main ]
@@ -24,6 +24,6 @@ jobs:
       run: |
         aws deploy create-deployment \
         --application-name nodejs-express-app \
-        --deployment-group-name nodejs-express-app-cd1 \
+        --deployment-group-name nodejs-act6 \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
